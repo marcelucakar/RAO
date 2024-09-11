@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2. primer</title>
+
+        <style>
+            body {
+            font-family: Arial;
+            color: white;
+            height: 100vh;
+            }
+        
+
+            .split {
+            
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            text-align: center;
+            margin-top: 0;
+            }
+
+            .splitDown {
+            
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            bottom: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            text-align: center;
+            margin-top: 50vh;
+            }
+            
+            p{
+                margin-top: 50%;
+            }
+
+            .left {
+            left: 0;
+            top: 0;
+            background-color: rgb(231, 76, 76);
+            }
+
+            .right {
+            right: 0;
+            top: 0;
+            background-color: rgb(109, 109, 235);
+            }
+
+            .rightDown {
+            right: 0;
+            bottom: 0;
+            background-color: rgb(130, 235, 109);
+            }
+            .leftDown {
+            left: 0;
+            bottom: 0;
+            background-color: rgb(235, 223, 109);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="split">
+            <div class="left"><p>hello world</p></div>
+            <div class="right"><p>pozdrav svetu</p></div>
+        </div>
+        
+        <div class="splitDown">
+            <div class="leftDown"><p>hello world</p></div>
+            <div class="rightDown"><p>pozdrav svetu</p></div>
+        </div>
+    </body>
+</html>        
