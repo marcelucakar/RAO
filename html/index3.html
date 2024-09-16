@@ -5,73 +5,67 @@
 
         <style>
             body {
-            font-family: Arial;
-            color: white;
-            height: 100vh;
+                font-family: Arial;
+                color: white;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
             }
-        
-
+            
             .split {
-            
-            width: 50%;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            overflow-x: hidden;
-            padding-top: 20px;
-            text-align: center;
-            margin-top: 0;
-            }
-
-            .splitDown {
-            
-            width: 50%;
-            z-index: 1;
-            bottom: 0;
-            overflow-x: hidden;
-            padding-top: 20px;
-            text-align: center;
-            margin-top: 50vh;
+                height: 50vh;
+                width: 50vw;
+                position: fixed;
+                z-index: 1;
+                overflow-x: hidden;
+                padding-top: 20px;
+                text-align: center;
             }
             
-            p{
-                margin-top: 50%;
+            p {
+                margin-top: 30%;
             }
 
-            .left {
-            left: 0;
-            top: 0;
-            background-color: rgb(231, 76, 76);
+            .top-left {
+                left: 0;
+                top: 0;
+                background-color: rgb(231, 76, 76);
             }
 
-            .right {
-            right: 0;
-            top: 0;
-            background-color: rgb(109, 109, 235);
+            .top-right {
+                right: 0;
+                top: 0;
+                background-color: rgb(109, 109, 235);
             }
 
-            .rightDown {
-            right: 0;
-            bottom: 0;
-            background-color: rgb(130, 235, 109);
+            .bottom-left {
+                left: 0;
+                bottom: 0;
+                background-color: rgb(46, 204, 113);
             }
-            .leftDown {
-            left: 0;
-            bottom: 0;
-            background-color: rgb(235, 223, 109);
+
+            .bottom-right {
+                right: 0;
+                bottom: 0;
+                background-color: rgb(241, 196, 15);
             }
         </style>
     </head>
     <body>
-        <div class="split">
-            <div class="left"><p>hello world</p></div>
-            <div class="right"><p>pozdrav svetu</p></div>
+        <div class="split top-left">
+            <p>Hello World!</p>
         </div>
         
-        <div class="splitDown">
-            <div class="leftDown"><p>hello world</p></div>
-            <div class="rightDown"><p>pozdrav svetu</p></div>
+        <div class="split top-right">
+            <p>Pozdrav svetu!</p>
+        </div>
+
+        <div class="split bottom-left">
+            <p>Halo Welt!</p>
         </div>
         
+        <div class="split bottom-right">
+            <p>こんにちは世界!</p>
+        </div>
     </body>
-</html>        
+</html>
